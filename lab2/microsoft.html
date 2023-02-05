@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Microsoft registration page</title>
+    <style>
+      a{
+        text-align: center;
+      }
+      #logolink img {
+        width: 108px;
+        margin-bottom: -5px;
+      }
+      #logolink{
+        padding: 16px 6px 16px 10px;
+        margin-top: 1px;
+        height: 22px;
+        width: 121px;
+      }
+      .topt, .logolink, #left, #right, .topitem, .micpro, .poisk, .voiti, .voiti div, #logolink, .topitem a, .poisk div, .chel div {
+        display: inline-block;
+      }
+      li a, .wordvoiti, .poisk, .micpro {
+        font-weight: 400;
+        font-size: 13px;
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: rgb(38, 38, 38);
+        text-decoration: none;
+      }
+      .topitem a{
+        padding: 16px 8px 10px 8px;
+        border: 1px solid white;
+        margin-top: 1px;
+        height: 20px;
+        position: relative;
+      }
+      .topitem {
+        box-sizing: border-box;
+      }
+      #bar {
+        box-sizing: border-box;
+        text-align: center;
+        display: inline-block;
+      }
+      #left {
+        padding: 0 1px 0 2px;
+        height: 54px;
+      }
+      .topt {
+        margin: 0;
+        display: block;
+        padding: 0;
+        width: 787px;
+        text-align: left;
+      }
+      
+      #bar {
+        padding-left: 65px;
+        padding-right: 65px;
+        height: 54px;
+        
+      }
+      .topitem a:hover, .sbut a:hover{
+        text-decoration: underline;
+      }
+      #lupa {
+        margin-bottom: -3px;
+      }
+      .imgvoiti {
+        margin-bottom: -11px;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+      .voiti {
+        width: 100px;
+        height: 48px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .poisk {
+        /* padding: 15px 9px 30px 9px; */
+        margin-right: 6px;
+        text-align: center;
+
+      }
+      .micpro {
+        padding: 16px 20px 16px 15px;
+      }
+      
+      body {
+        margin: 0;
+      }
+      .chel div a{
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 500;
+        
+      }
+      #inf {
+        box-sizing: border-box;
+        display: block;
+        width: 444px;
+      }
+      #container {
+        width: 444px;
+        align-self: center;
+        margin: 0;
+      }
+      #front {
+        margin-left: 90px;
+        align-self: center;
+      }
+      .fbut a{
+        color: white;
+        width: 115px;
+      }
+      .chel {
+        width: 444px;
+        box-sizing:border-box;
+        display: block;
+        margin: -8px 0 -8px 0;
+      }
+      .fbut {
+        width: 115px;
+        height: 16px;
+        padding: 10px 12px;
+        border-radius: 2px;
+        border: 2px solid rgb(0, 103, 184);
+        background-color: rgb(0, 103, 184);
+        margin: 8px 24px 8px 0;
+      }
+      .sbut a{
+        color: black;
+      }
+      .sbut {
+        padding: 10px 27px 10px 0;
+      }
+      .quote {
+        display: block;
+        box-sizing: border-box;
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        height: 48px;
+        width: 444px;
+        margin-bottom: 24px;
+        line-height: 24px;
+        text-align: left;
+      }
+      h1{
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 37px;
+        height: 44px;
+        text-align: left;
+        margin-bottom: 1.25rem;
+        margin-top: 0;
+        display: block;
+        box-sizing: border-box;
+        width: 444px;
+        margin-right: 0;
+      }
+      h2 {
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        /* height: 102px; */
+        text-align: left;
+        width: 306px;
+        margin: 0 0 16px 0;
+        font-size: 29px;
+        font-weight: 600;
+        /* display: block; */
+        /* box-sizing: border-box; */
+      }
+      .apptxt p, .cardlink{
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        /* height: 52px; */
+        width: 306px;
+        margin: 0;
+      }
+      .apptxt {
+        width: 306px;
+        padding-top: 16px;
+      }
+      #products img {
+        width: 306px;
+      }
+      #products, .cards {
+        display: flex;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .cards {
+        padding: 0 60px;
+      }
+      #products {
+        margin-top: 100px;
+      }
+      .app {
+        /* width: 306px; */
+        height: 434px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0px 12px;
+      }
+      #mid {
+        /* box-sizing: border-box; */
+        display: flex;
+        height: 450px;
+        background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP5-1920x600'); background-size: 100% 100%;
+      }
+      .cardlink a:hover{
+        text-decoration: underline;
+      }
+      .cardlink a{
+        color: rgb(0, 103, 184);
+        cursor: auto;
+        text-decoration: none;
+        
+      }
+      .cardlink {
+        box-sizing: border-box;
+        display: block;
+        margin-top: 1rem;
+      }
+      .cardlink a::after {
+        content: " >";
+      }
+    
+      
+    </style>
+  </head>
+  <body>
+    <div id="main" >
+      <div id="header">
+        <div id="bar">
+          <a href="https://www.microsoft.com" id="logolink"><img alt="logo" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"></a>
+          
+          <div id="left">
+            <ul class="topt">
+              <li class="topitem"><a href="https://www.microsoft.com/microsoft-365">Microsoft 365</a></li>
+              <li class="topitem"><a href="https://www.microsoft.com/ru-ru/microsoft-365/microsoft-office?rtc=1">Office</a></li>
+              <li class="topitem"><a href="https://www.microsoft.com/ru-ru/windows/">Windows</a></li>
+              <li class="topitem"><a href="https://support.microsoft.com/ru-kz">Поддержка</a></li>
+            </ul>
+          </div>
+          <div id="right">
+            <div class="micpro">
+              Продукты Майкрософт <img src="https://i.postimg.cc/bNPJfY2W/Screen-Shot-2023-02-05-at-01-53-01.png" alt="arrow" width="15">
+            </div>
+            <div class="poisk">
+              <div>Поиск</div> <img src="https://i.postimg.cc/FHsjbXNd/Screen-Shot-2023-02-05-at-02-00-10.png" id="lupa" alt="lupa" width="16">
+            </div>
+            <div class="voiti">
+              <div class="wordvoiti">Войти</div>
+              <div ><img src="https://i.postimg.cc/66CZZpJ5/Screen-Shot-2023-02-05-at-02-12-25.png" class="imgvoiti" width="32"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mid">
+        <div id="front">
+          <div id="container">
+            <div id="inf">
+              <h1>Microsoft 365</h1>
+              <div class="quote">Все, что вам нужно, чтобы достичь большего за меньшее время</div>
+              <div class="chel">
+                <div class="fbut">
+                  <a href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf?icid=mscom_marcom_H1a_M365Personal">Для 1 человека</a>
+                </div>
+                <div class="sbut"><a href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?icid=mscom_marcom_H1b_M365Family">До 6 человек</a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="products">
+        <div class="cards">
+            <div class="fst app">
+              <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop">
+              <div class="apptxt" >
+                <h2>Microsoft teams</h2>
+                <p>Общайтесь, проводите собрания, звоните и сотрудничайте</p>
+                <div class="cardlink" >
+                  <a href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="scnd app">
+              <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=380&hei=213&fit=crop">
+              <div class="apptxt" >
+                <h2>Microsoft Edge</h2>
+                <p> Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей. </p>
+                <div class="cardlink" >
+                  <a href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3">Скачать</a>
+                </div>
+              </div>
+            </div>
+            <div class="thr app">
+              <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=380&hei=213&fit=crop">
+              <div class="apptxt" >
+                <h2>Microsoft OneDrive</h2>
+                <p> Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно. </p>
+                <div class="cardlink" >
+                  <a href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="fth app">
+              <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=380&hei=213&fit=crop">
+              <div class="apptxt" >
+                <h2>One Note</h2>
+                <p> Приведите свои заметки и дела в порядок. </p>
+                <div class="cardlink" >
+                  <a href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
