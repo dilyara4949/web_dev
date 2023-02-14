@@ -56,3 +56,45 @@ body {
   border-radius: 6px;
   border: 1px solid rgb(210, 210, 210);
 }
+.trash{
+  float: right;
+  margin-left: 55%;
+}
+.checkbox{
+  margin-left: 2%;
+  width: 15px;
+  height: 15px;
+  margin-right: 0;
+}
+.added-text{
+  margin-left: 4%;
+}
+.one-item {
+  align-items: center;
+  border: 1px solid rgb(210, 210, 210);
+  /* width: ; */
+  height: 50px;
+  box-sizing: border-box;
+  /* display: flex; */
+}
+
+#items-cont{
+  margin-left: 20%;
+  margin-right: 20%;
+
+  /* box-sizing:flex; */
+  
+}
+.trash, .added-text, .checkbox{
+  /* align-items: center; */
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 1%;
+}
+ol li{
+  display: block;
+  
+}
+ol{
+  padding: 0;
+}
