@@ -25,7 +25,6 @@ function doneTask(event) {
   }
 }
 
-
 function deleteTask(event) {
   if (event.target.dataset.action == "delete") {
     console.log('1234');
