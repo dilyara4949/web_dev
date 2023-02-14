@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Simple ToDo list</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
   </head>
   <body>
     <div id="main">
@@ -17,17 +17,19 @@
           ToDo List
         </div>
         
-        <form id="input">
+        <form class="inpt">
           <input type="text" id="inputText" placeholder="New Task">
           <input type="submit" id="addBut" class="box" value="Add">
         </form>
         <div id="items-cont">
-          <ol>
+          <ol id="listOfTasks">
             <li>
               <div class="one-item">
                 <input type="checkbox" class="checkbox">
                 <span class="added-text">First task</span>
-                <image src="https://img.icons8.com/ios-glyphs/2x/filled-trash.png" width="20" class="trash"></image>
+                <button type="button" class="trash" data-action="delete">
+                  <image src="https://img.icons8.com/ios-glyphs/2x/filled-trash.png" width="20" ></image>
+                </button>
               </div>
             </li>
           </ul>

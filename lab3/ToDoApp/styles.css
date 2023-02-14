@@ -37,7 +37,7 @@ body {
   text-align: left;
   padding-left: 10px;
 }
-#input {
+.inpt {
   display: flex;
   align-items: center;
   margin-left: 25%;
@@ -85,11 +85,19 @@ body {
   /* box-sizing:flex; */
   
 }
-.trash, .added-text, .checkbox{
+.added-text, .checkbox, .trash{
   /* align-items: center; */
   box-sizing: border-box;
   position: absolute;
   margin-top: 1%;
+}
+.trash {
+  box-sizing: border-box;
+  position: absolute;
+  
+}
+.trash img {
+  pointer-events: none;
 }
 ol li{
   display: block;
@@ -98,3 +106,4 @@ ol li{
 ol{
   padding: 0;
 }
+
