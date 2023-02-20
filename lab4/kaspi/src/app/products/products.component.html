@@ -1,15 +1,15 @@
-<h3>Products</h3>
+<h2>Products</h2>
 
-<div *ngFor="let product of products">
+<div *ngFor="let product of products" class="product">
 
   <h3>
-    <a [title]="product.name + ' details'">
+    <a [title]="product.name + ' details'" href="{{product.src}}">
       {{ product.name }}
     </a>
   </h3>
 
 
-  <a [title]="product.name + ' details'">
+  <a [title]="product.name + ' details'" href="{{product.src}}">
     <img src="{{product.image}}">
   </a>
 
@@ -20,5 +20,14 @@
   <p >
     Rating: {{ product.rating }}
   </p>
+
+<!--  <button type="button"  >-->
+<!--    Share-->
+<!--  </button>-->
+  <a href="https://telegram.me/share/url?url={{product.src}}&text=Check this product">
+    <button type="button"  >
+      Share
+    </button>
+  </a>
 
 </div>
