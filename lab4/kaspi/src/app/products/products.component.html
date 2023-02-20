@@ -1,1 +1,24 @@
-<p>products works!</p>
+<h3>Products</h3>
+
+<div *ngFor="let product of products">
+
+  <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+
+
+  <a [title]="product.name + ' details'">
+    <img src="{{product.image}}">
+  </a>
+
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+  <p >
+    Rating: {{ product.rating }}
+  </p>
+
+</div>
