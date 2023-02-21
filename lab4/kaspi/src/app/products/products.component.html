@@ -2,28 +2,35 @@
 
 <div *ngFor="let product of products" class="product">
 
-  <h3>
-    <a [title]="product.name + ' details'" href="{{product.src}}">
-      {{ product.name }}
+    <h3>
+      <a [title]="product.name + ' details'" href="{{product.src}}">
+        {{ product.name }}
+      </a>
+    </h3>
+
+    <div class="product-img">
+        <div class="small-img">
+        </div>
+
+        <div>
+          <a [title]="product.name + ' details'" href="{{product.src[0]}}">
+            <img src="{{product.image}}">
+          </a>
+        </div>
+    </div>
+
+
+    <p *ngIf="product.description">
+      Description: {{ product.description }}
+    </p>
+    <p >
+      Rating: {{ product.rating }}
+    </p>
+
+    <a href="https://telegram.me/share/url?url={{product.src}}&text=Check this product">
+      <button type="button"  >
+        Share
+      </button>
     </a>
-  </h3>
-
-  <a [title]="product.name + ' details'" href="{{product.src}}">
-    <img src="{{product.image}}">
-  </a>
-
-
-  <p *ngIf="product.description">
-    Description: {{ product.description }}
-  </p>
-  <p >
-    Rating: {{ product.rating }}
-  </p>
-
-  <a href="https://telegram.me/share/url?url={{product.src}}&text=Check this product">
-    <button type="button"  >
-      Share
-    </button>
-  </a>
 
 </div>
