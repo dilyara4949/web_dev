@@ -9,10 +9,7 @@ import {products} from "../products";
 export class ProductsComponent {
   products = [...products];
 
-  share(src: string) {
-    const msg = "Check it out, please\n"
-
-
-
+  repl(){
+    
   }
 }

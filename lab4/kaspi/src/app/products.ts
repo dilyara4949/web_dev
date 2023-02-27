@@ -29,8 +29,7 @@ export const products = [
   },
   {
     image: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hb2/h9d/50337844887582/oreo-kakao-i-vanilnyj-krem-228-g-100971349-1-Container.jpg',
-    'https://d11qgm9a5k858y.cloudfront.net/ytat3g9r7qdrhmbmcvu9uevomye4',
-    'https://d11qgm9a5k858y.cloudfront.net/zvxnzajiinkft1w5xv4f9f8ssaer'
+    'https://d11qgm9a5k858y.cloudfront.net/ytat3g9r7qdrhmbmcvu9uevomye4'
     ],
     name: 'Oreo',
     description: 'Oreo cookies with cocoa and cream filling 228 g',

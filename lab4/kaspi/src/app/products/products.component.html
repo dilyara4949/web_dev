@@ -8,15 +8,24 @@
       </a>
     </h3>
 
-    <div class="product-img">
-        <div class="small-img">
-        </div>
+    <!-- <div >
+      <a [title]="product.name + ' details'" href="{{product.src}}">
+        <img src="{{product.image[0]}}" class="mainImg">
+      </a>
+    </div> -->
 
-        <div>
-          <a [title]="product.name + ' details'" href="{{product.src[0]}}">
-            <img src="{{product.image}}">
+    <div class="product-img">
+        <div >
+          <a [title]="product.name + ' details'" href="{{product.src}}">
+            <img src="{{product.image[0]}}" class="mainImg">
           </a>
         </div>
+
+        <div  class="small-cont">
+          <img src="{{pImg}}" class="small-img" *ngFor="let pImg of product.image" (onclick)="repl()">
+        </div>
+
+      
     </div>
 
 
@@ -32,5 +41,11 @@
         Share
       </button>
     </a>
+
+    <!-- <script>
+      function repl(event) {
+        var 
+      }
+    </script> -->
 
 </div>

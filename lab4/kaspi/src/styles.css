@@ -94,8 +94,6 @@ label {
 
 
 
-
-
 /* Top Bar */
 
 app-top-bar {
@@ -114,9 +112,11 @@ app-top-bar {
 
 
 
-app-products img{
+/* app-products img{
   width: 40%;
-}
+} */
+
+
 
 .product{
   margin-left: 20px;
@@ -125,13 +125,40 @@ app-products img{
   border: 1px solid rgb(200, 200, 200);
   width: 400px;
   text-align: center;
+
+}
+/* .product-img.small-cont{
+  align-items: center;
+  display: flex;
+} */
+.small-img{
+  display: flex;
 }
 
 app-products p{
   box-sizing: border-box;
+  display:block;
+}
+/* .product-img{
+  position: absolute;
+} */
+app-products .mainImg{
+  width: 55%;
+  max-height: 250px;
+}
+
+app-products .small-img{
+  width: 10%;
   display: block;
+  margin: 0px 5px;
+  box-sizing: content-box;
+  display: inline;
+  opacity: 0.6;
 }
 
 
+.small-img:hover{
+  opacity: 1;
+}
 
 
