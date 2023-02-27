@@ -138,8 +138,31 @@ app-top-bar h1 {
 }
 
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+.product{
+  margin-left: 20px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgb(200, 200, 200);
+  width: 400px;
+  text-align: center;
+
+}
+.small-img{
+  width: 10%;
+  display: block;
+  margin: 0px 5px;
+  box-sizing: content-box;
+  display: inline;
+  opacity: 0.6;
+}
+
+.small-img:hover{
+  opacity: 1;
+}
+a:hover {
+  opacity: 0.8;
+}
+.mainImg{
+  width: 55%;
+  max-height: 250px;
+}
