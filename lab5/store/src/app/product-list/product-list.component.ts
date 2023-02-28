@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { products } from '../products';
 
@@ -8,7 +8,10 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 
-export class ProductListComponent {
+export class ProductListComponent implements OnInit{
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.');
+  }
   products = [...products];
 
   share() {
@@ -18,6 +21,7 @@ export class ProductListComponent {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+
 }
 
 

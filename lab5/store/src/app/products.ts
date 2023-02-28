@@ -1,13 +1,20 @@
 
-export interface Product {
-  id: number;
-  name: string;
+export class Product {
+  id: number | undefined;
+  name: string | undefined;
   price: number;
-  description: string;
-  image: string[];
-  rating: number;
-  src: string
+  description: string | undefined;
+  image: string[] ;
+  rating: number | undefined;
+  src: string | undefined
+
+  constructor() {
+    this.image = [''];
+    this.price = 0;
+  }
 }
+
+
   
   export const products = [
     {
