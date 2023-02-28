@@ -12,6 +12,7 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ProductItemComponent } from './product-item/product-item.component';
+import { CategoriesComponent } from './categories/categories.component';
 @NgModule({
     imports: [
         BrowserModule,
@@ -32,7 +33,8 @@ import { ProductItemComponent } from './product-item/product-item.component';
         ProductDetailsComponent,
         CartComponent,
         ShippingComponent,
-        ProductItemComponent
+        ProductItemComponent,
+        CategoriesComponent
     ],
     exports: [
         TopBarComponent
