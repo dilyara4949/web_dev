@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+// import { url } from '@angular/core';
 
 import { products } from '../products';
 
@@ -21,6 +23,18 @@ export class ProductListComponent implements OnInit{
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+  currentUrl : string | undefined;
+  cur_category : string | undefined;
+
+  constructor(private route: ActivatedRoute) {
+    this.route.url.subscribe(url => {
+      this.currentUrl = url.join('/');
+      // this.cur_category = 
+      this.cur_category = this.currentUrl.split('/').pop(); 
+    });
+  }
+  
+
 
 }
 

@@ -10,11 +10,14 @@ import { Product } from '../products';
 export class ProductItemComponent implements OnInit{
   ngOnInit(): void {}
 
+
   @Input() item: Product;
+  @Input() cur_category: string | undefined;
   visible = true;
 
   constructor() {
     this.item = new Product;
     this.visible = true;
+
   }
 }

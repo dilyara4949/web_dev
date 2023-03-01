@@ -1,5 +1,8 @@
 <h2>Products</h2>
 
-<div *ngFor="let item of products" class="product">
-  <app-product-item [item]="item"></app-product-item>
+<div *ngFor="let item of products" >
+  <div >
+    <app-product-item [item]="item" [cur_category]="cur_category"></app-product-item>
+  </div>
 </div>
+{{cur_category}}
