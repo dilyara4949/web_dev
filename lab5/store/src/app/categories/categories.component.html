@@ -1,5 +1,9 @@
-<span>categories</span>
 
-<div *ngFor="let category of categories">
-  {{ category.name }}
+<div class="cont">
+  <span (click)="toggleCategoryList()">categories</span>
+  <div *ngIf="this.visible">
+    <div  *ngFor="let category of categories">
+      <a [routerLink]="['/categories', category.name]">{{ category.name }}</a>
+    </div>
+  </div>
 </div>

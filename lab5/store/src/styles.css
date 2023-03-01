@@ -166,3 +166,15 @@ a:hover {
   width: 55%;
   max-height: 250px;
 }
+
+/* .cont {
+  display: block;
+  justify-content: center;
+  align-items: center;
+} */
+app-categories{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

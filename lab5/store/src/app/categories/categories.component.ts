@@ -11,4 +11,9 @@ export class CategoriesComponent implements OnInit{
     throw new Error('Method not implemented.');
   }
   categories = [...categories];
+  visible = false;
+
+  toggleCategoryList() {
+    this.visible = !this.visible;
+  }
 }

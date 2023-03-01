@@ -6,11 +6,13 @@ export class Product {
   description: string | undefined;
   image: string[] ;
   rating: number | undefined;
-  src: string | undefined
+  src: string | undefined;
+  categor: string | undefined;
 
   constructor() {
     this.image = [''];
     this.price = 0;
+    // this.categor="";
   }
 }
 
@@ -27,6 +29,7 @@ export class Product {
       name: 'Kazakhstan chocolate',
       description: 'chocolate milk 100 g',
       rating: 4.8,
+      categor: "chocolate",
       src: "https://kaspi.kz/shop/p/rahat-shokoladnaja-plitka-molochnyi-100-g-100221859/?c=750000000#!/item"
     },
     {
@@ -39,6 +42,7 @@ export class Product {
       name: 'Albeni',
       description: 'milk chocolate bar, cookies 40 g',
       rating: 3.8,
+      categor: "chocolate",
       src: "https://kaspi.kz/shop/p/ulker-albeni-shokoladnyi-batonchik-molochnyi-pechen-e-40-g-100222662/?c=750000000"
     },
     {
@@ -50,6 +54,7 @@ export class Product {
       name: 'Oreo',
       description: 'Oreo cookies with cocoa and cream filling 228 g',
       rating: 4.7,
+      categor: "cookie",
       src: "https://kaspi.kz/shop/p/oreo-pechen-e-s-kakao-i-kremovoi-nachinkoi-228-g-100971349/?c=750000000"
     },
     {
@@ -62,6 +67,7 @@ export class Product {
       name: 'BelVita',
       description: 'Morning oatmeal cookies without additives 225 g',
       rating: 5,
+      categor: "cookie",
       src: "https://kaspi.kz/shop/p/belvita-utrennee-pechen-e-med-funduk-225-g-100970687/?c=750000000"
     },
     {
@@ -74,6 +80,7 @@ export class Product {
       name: 'Slastena',
       description: 'Sweet corn sticks 200 g',
       rating: 4.9,
+      categor: "other",
       src:"https://kaspi.kz/shop/p/slastena-kukuruznye-palochki-200-g-100814351/?c=750000000"
     },
     {
@@ -86,6 +93,7 @@ export class Product {
       name: 'Nutella',
       description: 'NUTELLA hazelnut paste, cocoa 180 g',
       rating: 5,
+      categor: "chocolate",
       src:"https://kaspi.kz/shop/p/nutella-pasta-lesnoi-oreh-kakao-180-g-100227056/?c=750000000"
     },
     {
@@ -98,6 +106,7 @@ export class Product {
       name: 'Yashkino Waffle rolls ',
       description: 'Yashkino Waffle rolls with condensed milk 160 g',
       rating: 4.6,
+      categor: "cookie",
       src:"https://kaspi.kz/shop/p/jashkino-vafel-nye-ruletiki-so-sguschenkoi-160-g-100236474/?c=750000000"
     },
     {
@@ -110,6 +119,7 @@ export class Product {
       name: 'Alpen Gold',
       description: 'chocolate bar white 80 g',
       rating: 5,
+      categor: "chocolate",
       src: "https://kaspi.kz/shop/p/alpen-gold-shokoladnaja-plitka-belyi-80-g-102442873/?c=750000000"
     },
     {
@@ -122,6 +132,7 @@ export class Product {
       name: 'Kinder',
       description: 'KINDER milk chocolate bar, milk 50 g',
       rating: 4.9,
+      categor: "chocolate",
       src:"https://kaspi.kz/shop/p/kinder-shokoladnaja-plitka-molochnyi-molochnaja-50-g-100221897/?c=750000000"
     },
     {
@@ -134,6 +145,7 @@ export class Product {
       name: 'Ulker Biskrem',
       description: 'Ulker Biskrem Sosoa cookies with cocoa cream filling 180 g',
       rating: 4.3,
+      categor: "cookie",
       src:"https://kaspi.kz/shop/p/ulker-biskrem-sosoa-pechen-e-s-kakao-kremovoi-nachinkoi-180-g-100970648/?c=750000000"
     },
   ];

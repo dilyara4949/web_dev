@@ -11,8 +11,10 @@ export class ProductItemComponent implements OnInit{
   ngOnInit(): void {}
 
   @Input() item: Product;
+  visible = true;
 
   constructor() {
     this.item = new Product;
+    this.visible = true;
   }
 }

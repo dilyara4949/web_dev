@@ -11,7 +11,7 @@ export const categories = [
     name: "cookie"
   },
   {
-    name: "maramalade"
+    name: "other"
   },
   {
     name: "fruits"

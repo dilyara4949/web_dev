@@ -19,10 +19,12 @@ import { CategoriesComponent } from './categories/categories.component';
         HttpClientModule,
         ReactiveFormsModule,
         RouterModule.forRoot([
-            {path: '', component: ProductListComponent},
+            // {path: '', component: ProductListComponent},
+            {path: '', component: CategoriesComponent},
             {path: 'products/:productId', component: ProductDetailsComponent},
             {path: 'cart', component: CartComponent},
             {path: 'shipping', component: ShippingComponent},
+            {path: 'categories/:name', component: ProductListComponent}
         ])
     ],
     declarations: [
