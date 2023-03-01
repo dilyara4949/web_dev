@@ -3,6 +3,6 @@
 <h2>{{cur_category}}</h2>
 <div *ngFor="let item of products" >
   <div >
-    <app-product-item [item]="item" [cur_category]="cur_category"></app-product-item>
+    <app-product-item [item]="item" [cur_category]="cur_category" (remove)="onNewTaskRemove($event)"></app-product-item>
   </div>
 </div>

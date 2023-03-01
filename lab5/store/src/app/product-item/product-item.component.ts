@@ -23,7 +23,16 @@ export class ProductItemComponent implements OnInit{
   liked(){
     this.item.likes +=1;
   }
+  // removeItem() {
+  //   this.visible = false;
+  // }
   removeItem() {
-    this.visible = false;
+    this.remove.emit(this.item.id);
   }
 }
+
+// removeTask() {
+//   this.remove.emit(this.task.id);
+// }
+
+

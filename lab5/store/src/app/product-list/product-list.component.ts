@@ -29,14 +29,21 @@ export class ProductListComponent implements OnInit{
   constructor(private route: ActivatedRoute) {
     this.route.url.subscribe(url => {
       this.currentUrl = url.join('/');
-      // this.cur_category = 
       this.cur_category = this.currentUrl.split('/').pop(); 
     });
   }
   
+  onNewTaskRemove(index: number){
+    this.products = this.products.filter((x) => x.id !== index);
+  }
 
 
 }
+// (remove)="onNewTaskRemove($event)"
+
+// onNewTaskRemove(index: number){
+//   this.newTasks = this.newTasks.filter((x) => x.id !== index);
+// }
 
 
 /*
