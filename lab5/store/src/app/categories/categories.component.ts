@@ -16,4 +16,12 @@ export class CategoriesComponent implements OnInit{
   toggleCategoryList() {
     this.visible = !this.visible;
   }
+  // cur_cat = '';
+  // change_cat(cat: string) {
+  //   this.cur_cat = cat;
+  // }
+
+  // export cur_cat string{
+
+  // }
 }

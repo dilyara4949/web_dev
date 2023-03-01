@@ -148,6 +148,124 @@ export class Product {
       categor: "cookie",
       src:"https://kaspi.kz/shop/p/ulker-biskrem-sosoa-pechen-e-s-kakao-kremovoi-nachinkoi-180-g-100970648/?c=750000000"
     },
+    {
+      id : 10,
+      price: 1,
+      image: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/he7/h66/47981047545886/magnum-mandariny-pakistan-103306405-1.jpg',
+      'https://foodcity.ru/storage/products/October2018/XDN89hC298SEmtKbJT1V.jpg',
+      'https://moyaokruga.ru/img/image_detail_new2/ea927600-dadd-468f-8c28-54fbf754cc6c.jpg'
+      ],
+      name: 'Tangerines Pakistan',
+      description: 'MAGNUM Tangerines Pakistan',
+      rating: 4.3,
+      categor: "fruits",
+      src:"https://kaspi.kz/shop/p/magnum-mandariny-pakistan-103306405/?c=750000000#!/item"
+    },
+    {
+      id : 11,
+      price: 1,
+      image: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h2e/hf1/65277233987614/magnum-yabloko-golden-kazakhstan-101639291-1.jpg',
+      'https://cdn.shopify.com/s/files/1/0150/9140/0758/products/03greenapple.png?v=1563370380'
+      ],
+      name: ' Apple Golden Kazakhstan',
+      description: 'Kind of fruit apple, A variety of stone',
+      rating: 4.9,
+      categor: "fruits",
+      src:"https://kaspi.kz/shop/p/magnum-jabloko-golden-kazahstan-101639291/?c=750000000#!/item"
+    },
+    {
+      id : 12,
+      price: 1,
+      image: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h3b/hbf/49787340652574/magnum-grusha-konferentsiya-bel-giya-104342853-1.jpg',
+      'https://cdn.shopify.com/s/files/1/0336/7167/5948/products/image-of-forelle-pears-fruit-14764272549932_400x400.jpg?v=1616898005'
+      ],
+      name: 'pear ',
+      description: 'Type of fruit pear, A variety of stone',
+      rating: 3.9,
+      categor: "fruits",
+      src:"https://kaspi.kz/shop/p/magnum-grusha-konferentsija-bel-gija-104342853/?c=750000000#!/item"
+    },
+    {
+      id : 13,
+      price: 1,
+      image: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h3f/hcb/34359119773726/magnum-banan-ekvador-101349284-1.jpg',
+      'https://www.tastingtable.com/img/gallery/why-artificial-banana-flavor-doesnt-taste-like-the-real-thing/intro-1660147847.jpg',
+      'https://s.cornershopapp.com/product-images/4996136.jpg?versionId=yr4VEcgXlEh8en6jki85PHogQC.Jl_cZ'
+      ],
+      name: 'banana',
+      description: 'MAGNUM Banana Ecuador',
+      rating: 4.9,
+      categor: "fruits",
+      src:"https://kaspi.kz/shop/p/magnum-banan-ekvador-101349284/?c=750000000#!/item"
+    },
+    {
+      id : 14,
+      price: 1,
+      image: [
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h49/hd6/52498679005214/kivi-cili-v-setke-st-105822254-1.jpg',
+      'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
+      'https://www.drschaer.com/sites/default/files/2021-11/kiwi.jpg'
+      ],
+      name: 'Kiwi',
+      description: 'MAGNUM kiwi Chile 0.5 kg',
+      rating: 4.6,
+      categor: "fruits",
+      src:"https://kaspi.kz/shop/p/magnum-kivi-chili-0-5-kg-105822254/?c=750000000#!/item"
+    },
+    {
+      id : 15,
+      price: 1,
+      image: [
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h75/h4b/48795454111774/kazahstan-arahis-v-sahare-200-g-102867331-1.jpg',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd8/h95/48795454570526/mcc-trade-arahis-v-sahare-200-g-102867331-2.jpg',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hcf/h8b/48795455029278/mcc-trade-arahis-v-sahare-200-g-102867331-3.jpg'
+      ],
+      name: 'Peanuts in sugar',
+      description: 'Mcc Trade peanuts in sugar 200 g',
+      rating: 4.5,
+      categor: "other",
+      src:"https://kaspi.kz/shop/p/mcc-trade-arahis-v-sahare-200-g-102867331/?c=750000000#!/item"
+    },
+    {
+      id : 16,
+      price: 1,
+      image: [
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h2b/ha6/45294250328094/ferma-orda-kurt-solenyj-110-g-102231155-1.jpg',
+      'https://kz.all.biz/img/kz/catalog/3374988.JPG',
+      'https://dastarkhan24.kz/upload/resize_cache/iblock/c50/800_800_2/c50bdde9832ff8a682eb990120c1e4d3.jpg'
+      ],
+      name: 'Kurt',
+      description: 'Farm Horde kurt salted 110 g',
+      rating: 5,
+      categor: "other",
+      src:"https://kaspi.kz/shop/p/mcc-trade-arahis-v-sahare-200-g-102867331/?c=750000000#!/item"
+    },
+    {
+      id : 17,
+      price: 1,
+      image: [
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/heb/h5b/46879409569822/foodmaster-lactel-ultrapasterizovannoe-2-5-1-l-100223139-1-Container.jpg',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hca/h22/46879409799198/foodmaster-lactel-ultrapasterizovannoe-2-5-1-l-100223139-2.jpg',
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h7d/hed/46879410028574/foodmaster-lactel-ultrapasterizovannoe-2-5-1-l-100223139-3.jpg'
+      ],
+      name: 'Milk',
+      description: 'Lactel milk 2.5% 1000 ml',
+      rating: 4.5,
+      categor: "other",
+      src:"https://kaspi.kz/shop/p/lactel-moloko-2-5-1000-ml-100223139/?c=750000000#!/item"
+    },
+    {
+      id : 18,
+      price: 1,
+      image: [
+      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hde/h41/50337229930526/cesna-psenicnaa-vyssij-sort-2-kg-100970657-1-Container.jpg'
+      ],
+      name: 'Flour',
+      description: 'TSESNA flour wheat grade highest grade 2 kg',
+      rating: 4.5,
+      categor: "other",
+      src:"https://kaspi.kz/shop/p/muka-tsesna-pshenichnaja-sort-vysshii-2-kg-100970657/?c=750000000#!/item"
+    },
   ];
   
 
