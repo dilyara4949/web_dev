@@ -71,8 +71,6 @@ label {
 
 /* Button */
 .button, button {
-  display: inline-flex;
-  align-items: center;
   padding: 8px 16px;
   border-radius: 2px;
   font-size: 14px;
@@ -80,8 +78,15 @@ label {
   background-color: #1976d2;
   color: white;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.but-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .button:hover, button:hover {
   opacity: 0.8;
   font-weight: normal;
@@ -177,4 +182,10 @@ app-categories{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.like img{
+  height: 16px;
+  /* width: 100%; */
 }

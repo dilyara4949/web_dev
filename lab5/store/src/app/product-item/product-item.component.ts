@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Product } from '../products';
 // import ()
 
@@ -13,11 +13,17 @@ export class ProductItemComponent implements OnInit{
 
   @Input() item: Product;
   @Input() cur_category: string | undefined;
+  @Output() remove = new EventEmitter();
   visible = true;
 
   constructor() {
     this.item = new Product;
     this.visible = true;
-
+  }
+  liked(){
+    this.item.likes +=1;
+  }
+  removeItem() {
+    this.remove.emit(this.item);
   }
 }

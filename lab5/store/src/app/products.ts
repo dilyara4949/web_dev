@@ -8,10 +8,12 @@ export class Product {
   rating: number | undefined;
   src: string | undefined;
   categor: string | undefined;
+  likes: number;
 
   constructor() {
     this.image = [''];
     this.price = 0;
+    this.likes = 0;
     // this.categor="";
   }
 }
@@ -30,6 +32,7 @@ export class Product {
       description: 'chocolate milk 100 g',
       rating: 4.8,
       categor: "chocolate",
+      likes : 0,
       src: "https://kaspi.kz/shop/p/rahat-shokoladnaja-plitka-molochnyi-100-g-100221859/?c=750000000#!/item"
     },
     {
@@ -43,6 +46,7 @@ export class Product {
       description: 'milk chocolate bar, cookies 40 g',
       rating: 3.8,
       categor: "chocolate",
+      likes : 0,
       src: "https://kaspi.kz/shop/p/ulker-albeni-shokoladnyi-batonchik-molochnyi-pechen-e-40-g-100222662/?c=750000000"
     },
     {
@@ -55,6 +59,7 @@ export class Product {
       description: 'Oreo cookies with cocoa and cream filling 228 g',
       rating: 4.7,
       categor: "cookie",
+      likes : 0,
       src: "https://kaspi.kz/shop/p/oreo-pechen-e-s-kakao-i-kremovoi-nachinkoi-228-g-100971349/?c=750000000"
     },
     {
@@ -68,6 +73,7 @@ export class Product {
       description: 'Morning oatmeal cookies without additives 225 g',
       rating: 5,
       categor: "cookie",
+      likes : 0,
       src: "https://kaspi.kz/shop/p/belvita-utrennee-pechen-e-med-funduk-225-g-100970687/?c=750000000"
     },
     {
@@ -81,6 +87,7 @@ export class Product {
       description: 'Sweet corn sticks 200 g',
       rating: 4.9,
       categor: "other",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/slastena-kukuruznye-palochki-200-g-100814351/?c=750000000"
     },
     {
@@ -94,6 +101,7 @@ export class Product {
       description: 'NUTELLA hazelnut paste, cocoa 180 g',
       rating: 5,
       categor: "chocolate",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/nutella-pasta-lesnoi-oreh-kakao-180-g-100227056/?c=750000000"
     },
     {
@@ -107,6 +115,7 @@ export class Product {
       description: 'Yashkino Waffle rolls with condensed milk 160 g',
       rating: 4.6,
       categor: "cookie",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/jashkino-vafel-nye-ruletiki-so-sguschenkoi-160-g-100236474/?c=750000000"
     },
     {
@@ -120,6 +129,7 @@ export class Product {
       description: 'chocolate bar white 80 g',
       rating: 5,
       categor: "chocolate",
+      likes : 0,
       src: "https://kaspi.kz/shop/p/alpen-gold-shokoladnaja-plitka-belyi-80-g-102442873/?c=750000000"
     },
     {
@@ -133,6 +143,7 @@ export class Product {
       description: 'KINDER milk chocolate bar, milk 50 g',
       rating: 4.9,
       categor: "chocolate",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/kinder-shokoladnaja-plitka-molochnyi-molochnaja-50-g-100221897/?c=750000000"
     },
     {
@@ -146,6 +157,7 @@ export class Product {
       description: 'Ulker Biskrem Sosoa cookies with cocoa cream filling 180 g',
       rating: 4.3,
       categor: "cookie",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/ulker-biskrem-sosoa-pechen-e-s-kakao-kremovoi-nachinkoi-180-g-100970648/?c=750000000"
     },
     {
@@ -159,6 +171,7 @@ export class Product {
       description: 'MAGNUM Tangerines Pakistan',
       rating: 4.3,
       categor: "fruits",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/magnum-mandariny-pakistan-103306405/?c=750000000#!/item"
     },
     {
@@ -171,6 +184,7 @@ export class Product {
       description: 'Kind of fruit apple, A variety of stone',
       rating: 4.9,
       categor: "fruits",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/magnum-jabloko-golden-kazahstan-101639291/?c=750000000#!/item"
     },
     {
@@ -183,6 +197,7 @@ export class Product {
       description: 'Type of fruit pear, A variety of stone',
       rating: 3.9,
       categor: "fruits",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/magnum-grusha-konferentsija-bel-gija-104342853/?c=750000000#!/item"
     },
     {
@@ -196,6 +211,7 @@ export class Product {
       description: 'MAGNUM Banana Ecuador',
       rating: 4.9,
       categor: "fruits",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/magnum-banan-ekvador-101349284/?c=750000000#!/item"
     },
     {
@@ -210,6 +226,7 @@ export class Product {
       description: 'MAGNUM kiwi Chile 0.5 kg',
       rating: 4.6,
       categor: "fruits",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/magnum-kivi-chili-0-5-kg-105822254/?c=750000000#!/item"
     },
     {
@@ -224,6 +241,7 @@ export class Product {
       description: 'Mcc Trade peanuts in sugar 200 g',
       rating: 4.5,
       categor: "other",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/mcc-trade-arahis-v-sahare-200-g-102867331/?c=750000000#!/item"
     },
     {
@@ -238,6 +256,7 @@ export class Product {
       description: 'Farm Horde kurt salted 110 g',
       rating: 5,
       categor: "other",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/mcc-trade-arahis-v-sahare-200-g-102867331/?c=750000000#!/item"
     },
     {
@@ -252,6 +271,7 @@ export class Product {
       description: 'Lactel milk 2.5% 1000 ml',
       rating: 4.5,
       categor: "other",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/lactel-moloko-2-5-1000-ml-100223139/?c=750000000#!/item"
     },
     {
@@ -264,6 +284,7 @@ export class Product {
       description: 'TSESNA flour wheat grade highest grade 2 kg',
       rating: 4.5,
       categor: "other",
+      likes : 0,
       src:"https://kaspi.kz/shop/p/muka-tsesna-pshenichnaja-sort-vysshii-2-kg-100970657/?c=750000000#!/item"
     },
   ];

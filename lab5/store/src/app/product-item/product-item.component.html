@@ -22,12 +22,24 @@
     Description: {{ item.description }}
   </p>
   
-  
-  <a href="https://telegram.me/share/url?url={{item.src}}&text=Check this product" >
-    <button type="button" >
-      Share
+  <div class="but-cont">
+    <button class="like" (click)="liked()" type="button">
+      <!-- <img src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png" alt=""> -->
+      {{item.likes}}
     </button>
-  </a>
+  
+   
+    <a href="https://telegram.me/share/url?url={{item.src}}&text=Check this product" >
+      <button type="button">
+          Share
+      </button>
+    </a>
+    <button (click)="removeItem()">
+      remove item
+    </button>
+  </div>
+
+
 </div>
 
   <!-- <app-product-alerts
