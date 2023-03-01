@@ -24,6 +24,6 @@ export class ProductItemComponent implements OnInit{
     this.item.likes +=1;
   }
   removeItem() {
-    this.remove.emit(this.item);
+    this.visible = false;
   }
 }
