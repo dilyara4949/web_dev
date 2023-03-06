@@ -17,6 +17,7 @@ body {
 .added-text-done{
   color: rgb(100, 100, 100);
   text-decoration: line-through;
+  background-color: aqua;
 }
 #addBut {
   background-color: #3372c3;

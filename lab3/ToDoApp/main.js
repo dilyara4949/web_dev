@@ -1,6 +1,6 @@
 const form = document.querySelector('.inpt');
 const inputTxt = document.querySelector('#inputText');
-const listOfTasks = document.querySelector('#listOfTasks');
+let listOfTasks = document.querySelector('#listOfTasks');
 
 
 form.addEventListener('submit', addNewTask);
@@ -16,12 +16,16 @@ function doneTask(event) {
     const addedText = up.querySelector('.added-text')
     console.log(addedText)
     addedText.classList.add('added-text-done')
+    up.classList.add('added-text-done')
+    
+
   }
   else {
     const up = event.target.closest('li')
     const addedText = up.querySelector('.added-text')
     console.log(addedText)
     addedText.classList.remove('added-text-done')
+    up.classList.remove('added-text-done')
   }
 }
 
@@ -31,6 +35,26 @@ function deleteTask(event) {
     const up = event.target.closest('li');
     // console.log(up);
     up.remove();
+  }
+}
+
+function sortList() {
+  let i, ok, li, sorted;
+  ok = true;
+  while (ok) {
+     ok = false;
+     li = listOfTasks.getElementsByTagName("li");
+     for (i = 0; i < li.length - 1; i++) {
+        sorted = false;
+        if ( li[i].innerHTML.toLowerCase() > li[i + 1].innerHTML.toLowerCase() ) {
+           sorted = true;
+           break;
+        }
+     }
+     if (sorted) {
+        li[i].parentNode.insertBefore(li[i + 1], li[i]);
+        ok = true;
+     }
   }
 }
 
@@ -51,7 +75,7 @@ function addNewTask(event) {
   </li>`;
 
   listOfTasks.insertAdjacentHTML(`beforeend`, addedBlock);
-
+  sortList();
   inputTxt.value = '';
   inputTxt.focus();
 }
