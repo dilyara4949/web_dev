@@ -9,9 +9,11 @@ import { AlbumsService } from '../albums.service';
 })
 export class AlbumsComponent implements OnInit{
   albums: Album[];
+  loaded: boolean;
 
   constructor (private albumsService: AlbumsService) {
     this.albums = []
+    this.loaded = false;
   }
 
   ngOnInit(): void{
@@ -21,6 +23,10 @@ export class AlbumsComponent implements OnInit{
   getAlbums() {
     this.albumsService.getAlbums().subscribe((albums) =>{
       this.albums = albums;
+      this.loaded = true;
     })
+  }
+  removeAlbum(idx: number) {
+    this.albums = this.albums.filter((x) => x.id !== idx);
   }
 }

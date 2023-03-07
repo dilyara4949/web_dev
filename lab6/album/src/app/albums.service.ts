@@ -20,5 +20,6 @@ export class AlbumsService {
   getAlbum(id: number) {
     return this.client.get<Album>(`${this.BASE_URL}/albums/${id}`)
   }
+  
 
 }
