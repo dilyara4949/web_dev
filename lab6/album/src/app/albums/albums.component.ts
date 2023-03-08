@@ -10,6 +10,8 @@ import { AlbumsService } from '../albums.service';
 export class AlbumsComponent implements OnInit{
   albums: Album[];
   loaded: boolean;
+  create_album: boolean = false;
+  newAlbum: Album = {} as Album;
 
   constructor (private albumsService: AlbumsService) {
     this.albums = []
@@ -29,6 +31,18 @@ export class AlbumsComponent implements OnInit{
   deleteAlbum(id: number) {
     this.albumsService.deleteAlbum(id).subscribe(() => {
       this.albums = this.albums.filter(album => album.id !== id);
+    });
+  }
+
+  to_create() {
+    this.create_album = !this.create_album;
+  }
+
+  addAlbum() {
+    this.albumsService.addAlbum(this.newAlbum).subscribe((album) => {
+      this.albums.push(album);
+      this.loaded = true;
+      this.newAlbum = {} as Album;
     });
   }
   

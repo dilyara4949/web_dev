@@ -1,3 +1,11 @@
+<h2>Albums list</h2>
+
+<fieldset>
+  <input type="text" [(ngModel)]="newAlbum.title"><br/>
+  <button (click)="addAlbum()">Add  album</button>
+</fieldset>
+
+
 <div>
   <ul *ngFor="let album of albums">
     <li>
