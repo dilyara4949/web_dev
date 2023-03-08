@@ -10,6 +10,8 @@ import { AlbumsService } from '../albums.service';
 })
 export class AlbumDetailComponent implements OnInit{
   album: Album;
+  is_edit: boolean = false;
+  newTitle: string = "";
 
   constructor (private route: ActivatedRoute,
               private albumsService: AlbumsService) {
@@ -24,4 +26,36 @@ export class AlbumDetailComponent implements OnInit{
         });
       })
   }
+
+  edit() {
+    this.is_edit = !this.is_edit;
+  }
+  // save() {
+  //   if (this.newTitle === "") {
+  //     alert("Title cannot be empty!")
+  //   } else {
+  //     this.album.title = this.newTitle;
+  //     this.is_edit = false;
+  //     alert("Title updated");
+  //   }
+  // }
+
+
+  updateAlbum(){
+
+    if (this.newTitle === "") {
+      alert("Title cannot be empty!")
+    } else {
+      this.albumsService.updateAlbum(this.album).subscribe(() => {
+        this.album.title = this.newTitle;
+        alert("Title updated");
+        this.newTitle = "";
+        this.is_edit = false;
+      });
+    }
+  }
+
+  // addPost(post: Post): Observable<Post> {
+  //   return this.client.post<Post>(`${this.BASE_URL}/posts`, post);
+  // }
 }

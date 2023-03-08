@@ -10,4 +10,15 @@
   </li>
 </ul>
 
-<div >Edit</div>
+<button (click)="edit()">Edit title</button><br>
+<div *ngIf="is_edit">
+  <form action="PUT">
+    <input type="text" [(ngModel)]="newTitle" name="input_title">
+    <!-- <input type="submit" value="Save"> -->
+    <button (click)="updateAlbum()">Save</button>
+  </form>
+</div>
+
+
+
+<button><a routerLink="/albums">Return back</a></button>
