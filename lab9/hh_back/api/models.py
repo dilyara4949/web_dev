@@ -4,7 +4,7 @@ from django.db import models
 
 class Company(models.Model):
     def __str__(self):
-        return f'(self.name)'
+        return f'{self.name}'
 
     name = models.CharField(max_length=255)
     description = models.TextField()
@@ -19,13 +19,13 @@ class Company(models.Model):
 
 class Vacancy (models.Model):
     def __str__(self):
-        return f'(self.name)'
+        return f'{self.name}'
 
 
     name = models.CharField(max_length=255)
     description = models.TextField()
     salary = models.FloatField()
-    category = models.ForeignKey(Company, on_delete=models.CASCADE)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE)
 
 
     # def to_json(self):
