@@ -12,7 +12,8 @@ def home(request):
 
 def company_list(request):
     return JsonResponse(list(Company.objects.values()), safe=False,json_dumps_params={'indent' : 2})
-
+def vacancy_list(request):
+    return JsonResponse(list(Vacancy.objects.values()), safe=False,json_dumps_params={'indent' : 2})
 
 def company(request, id):
     try:
@@ -22,10 +23,19 @@ def company(request, id):
         return JsonResponse({'error': 'Company not found'})
 
 
+def vacancy(request, id):
+    try:
+        v = Vacancy.objects.get(pk=id)
+        return JsonResponse(v.to_json(), safe=False,json_dumps_params={'indent' : 2})
+    except:
+        return JsonResponse({'error': 'Vacancy not found'})
 
-    # path('companies/', views.company_list),
-    # path('companies/<int:id>/', views.company),
-    # path('companies/<int:id>/vacancies/', views.company_vacancy),
-    # path('vacancies/', views.vacancy_list),
-    # path('vacancies/<int:id>/', views.vacancy),
-    # path('vacancies/top_ten/', views.vacancies_top),
+
+def company_vacancy(request, id):
+    vac = Vacancy.objects.filter(company=id)
+    v_json = [v.to_json() for v in vac]
+    return JsonResponse(v_json, safe=False,json_dumps_params={'indent' : 2})
+
+
+def vacancies_top(request):
+    return JsonResponse(list(Vacancy.objects.values().order_by('-salary'))[:10], safe=False,json_dumps_params={'indent' : 2})

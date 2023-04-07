@@ -37,6 +37,6 @@ class Vacancy (models.Model):
             'name': self.name,
             'salary': self.salary,
             'description': self.description,
-            'company': self.count
+            'company': self.company.name
         }
 
