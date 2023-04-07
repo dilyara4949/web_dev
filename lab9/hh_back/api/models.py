@@ -10,11 +10,14 @@ class Company(models.Model):
     description = models.TextField()
     city = models.CharField(max_length=255)
     address = models.TextField()
-    # def to_json(self):
-    #     return {
-    #         'id': self.id,
-    #         'name': self.name
-    #     }
+    def to_json(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'description': self.description,
+            'city': self.city,
+            'address': self.address
+        }
 
 
 class Vacancy (models.Model):
@@ -28,12 +31,12 @@ class Vacancy (models.Model):
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
 
 
-    # def to_json(self):
-    #     return {
-    #         'id': self.id,
-    #         'name': self.name,
-    #         'salary': self.salary,
-    #         'description': self.description,
-    #         'company': self.count
-    #     }
+    def to_json(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'salary': self.salary,
+            'description': self.description,
+            'company': self.count
+        }
 

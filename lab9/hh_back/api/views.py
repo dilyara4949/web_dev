@@ -14,8 +14,14 @@ def company_list(request):
     return JsonResponse(list(Company.objects.values()), safe=False,json_dumps_params={'indent' : 2})
 
 
+def company(request, id):
+    try:
+        c = Company.objects.get(pk=id)
+        return JsonResponse(c.to_json(), safe=False,json_dumps_params={'indent' : 2})
+    except:
+        return JsonResponse({'error': 'Company not found'})
 
-#
+
 
     # path('companies/', views.company_list),
     # path('companies/<int:id>/', views.company),
