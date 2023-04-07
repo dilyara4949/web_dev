@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc24c76a-c9bb-427a-af6d-6e711522b84b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/web_dev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_dev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d7fce91-eed3-4842-a36f-9fb71df9277e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d7fce91-eed3-4842-a36f-9fb71df9277e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/back_shop/api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/back_shop/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/back_shop/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/back_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/back_shop/back_shop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/back_shop/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/main/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/main/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/main/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/main/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/main/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/main/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/back_shop/main/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +20,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2Lxxy8sFYqJK545DVL8oxffDvWB" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -39,27 +31,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dilaramuhambetova/web_web/web_dev&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/dilaramuhambetova/web_dev/web_dev/lab4/tutorialTask/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/dilaramuhambetova/web_web/web_dev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "ts.external.directory.path": "/Users/dilaramuhambetova/web_web/web_dev/lab5/store/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -109,6 +101,7 @@
       <workItem from="1677317935157" duration="1404000" />
       <workItem from="1680335656667" duration="11730000" />
       <workItem from="1680592020953" duration="1244000" />
+      <workItem from="1680698368093" duration="4981000" />
     </task>
     <servers />
   </component>
