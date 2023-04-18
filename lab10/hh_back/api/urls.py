@@ -11,8 +11,10 @@ urlpatterns = [
     # path('vacancies/<int:id>/', views.vacancy),
     # path('vacancies/top_ten/', views.vacancies_top),
 
-    path('company/', views.CompanyListAPIView.as_view()),
-    path('company/<int:company_id>/', views.CompanyDetailAPIView.as_view()),
+    path('company/', views.company_list),
+    path('company/<int:company_id>/', views.Company_detail),    
+    # path('company/', views.CompanyListAPIView.as_view()),
+    # path('company/<int:company_id>/', views.CompanyDetailAPIView.as_view()),
     path('vacancy/', views.VacancyAPIView.as_view()),
     path('vacancy/<int:vacancy_id>/', views.VacancyDetailAPIView.as_view()),
     path('company/<int:company_id>/vacancy/', views.CompanyVacancyAPIView.as_view()),

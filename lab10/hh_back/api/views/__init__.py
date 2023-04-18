@@ -1,2 +1,3 @@
-from .cbv import CompanyListAPIView, CompanyDetailAPIView, \
-    VacancyAPIView, VacancyDetailAPIView, CompanyVacancyAPIView
+from .cbv import  VacancyAPIView, VacancyDetailAPIView, CompanyVacancyAPIView
+# CompanyListAPIView, CompanyDetailAPIView, \
+from .fbv import company_list, Company_detail
