@@ -1,0 +1,5 @@
+<ul>
+        <li *ngFor="let v of vacancies"> {{v.id}})  {{v.name}} ({{v.company}})</li>
+        <p *ngIf="vacancies.length==0">No vacancies in that company</p>
+</ul>
+
